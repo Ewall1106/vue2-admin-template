@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <keep-alive>
-      <router-view v-if="$route.meta.keepAlive" :key="key" />
-    </keep-alive>
-    <router-view v-if="!$route.meta.keepAlive" :key="key" />
-
-    <tab-bar v-if="$route.meta.showTab" />
+    <Layout>
+      <keep-alive v-if="$route.meta.keepAlive">
+        <router-view :key="key" />
+      </keep-alive>
+      <router-view v-else :key="key" />
+    </Layout>
   </div>
 </template>
 
 <script>
-import TabBar from "./components/Tabbar";
+import Layout from "./components/Layout";
 
 export default {
   components: {
-    TabBar,
+    Layout,
   },
   computed: {
     key() {

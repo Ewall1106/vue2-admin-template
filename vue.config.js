@@ -37,7 +37,7 @@ module.exports = {
   },
   configureWebpack: {
     devtool: "source-map",
-    name: "vue-h5-template",
+    name: "vue2-admin-template",
     resolve: {
       alias: {
         "@": resolve("src"),

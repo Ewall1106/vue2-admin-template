@@ -1,15 +1,17 @@
 module.exports = {
   presets: ["@vue/cli-plugin-babel/preset"],
-  // vant引入：https://youzan.github.io/vant/#/zh-CN/quickstart#yin-ru-zu-jian
   plugins: [
     [
       "import",
+      { libraryName: "ant-design-vue", libraryDirectory: "es", style: "css" },
+      "ant-design-vue",
+    ],
+    [
+      "component",
       {
-        libraryName: "vant",
-        libraryDirectory: "es",
-        style: true,
+        libraryName: "element-ui",
+        styleLibraryName: "theme-chalk",
       },
-      "vant",
     ],
   ],
 };
