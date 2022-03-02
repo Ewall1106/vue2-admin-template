@@ -1,15 +1,18 @@
 <template>
   <div class="home">
-    <FormIndex />
+    <!-- <FormIndex /> -->
+    <ElementTestForm />
   </div>
 </template>
 
 <script>
-import FormIndex from "@/components/element";
+// import FormIndex from "@/components/element";
+import ElementTestForm from "@/components/ElementTestForm";
 
 export default {
   components: {
-    FormIndex,
+    // FormIndex,
+    ElementTestForm,
   },
 };
 </script>

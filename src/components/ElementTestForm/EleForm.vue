@@ -1,0 +1,43 @@
+<template>
+  <Form ref="form" :model="form" v-bind="$attrs" :rules="rules">
+    <slot />
+  </Form>
+</template>
+
+<script>
+import { Form } from "element-ui";
+
+export default {
+  name: "EleForm",
+  components: {
+    Form,
+  },
+  provide() {
+    return {
+      getForm: () => {
+        return this.form;
+      },
+      resetForm: () => {
+        this.$refs.form.resetFields();
+      },
+      validate: (cb) => {
+        this.$refs.form.validate(cb);
+      },
+    };
+  },
+  data() {
+    return {
+      form: {},
+      rules: {
+        // name: [
+        //   { required: true, message: "改字段不能为空", trigger: "change" },
+        //   { min: 3, max: 5, message: "长度在3到5个字符", trigger: "change" },
+        // ],
+      },
+    };
+  },
+  mounted() {
+    // 回显的逻辑写这里axios.get...
+  },
+};
+</script>
