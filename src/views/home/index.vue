@@ -1,17 +1,15 @@
 <template>
   <div class="home">
-    <Button>11</Button>
-    <Calendar />
+    <FormIndex />
   </div>
 </template>
 
 <script>
-import { Button } from "element-ui";
-import { Calendar } from "ant-design-vue";
+import FormIndex from "@/components/element";
+
 export default {
   components: {
-    Button,
-    Calendar,
+    FormIndex,
   },
 };
 </script>
