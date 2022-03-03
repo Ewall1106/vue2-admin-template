@@ -1,0 +1,63 @@
+<template>
+  <FormModel
+    ref="form"
+    :model="form"
+    :rules="rules"
+    v-bind="$attrs"
+    :label-col="{ span: labelcolspan }"
+    :wrapper-col="{ span: wrappercolspan }"
+  >
+    <slot />
+  </FormModel>
+</template>
+
+<script>
+import { FormModel } from "ant-design-vue";
+
+export default {
+  name: "AntdForm",
+  props: {
+    labelcolspan: {
+      type: Number,
+      default: 2,
+    },
+    wrappercolspan: {
+      type: Number,
+      default: 8,
+    },
+  },
+  components: {
+    FormModel,
+  },
+  data() {
+    return {
+      form: {},
+      rules: {
+        // name: [
+        //   { required: true, message: "改字段不能为空", trigger: "change" },
+        //   { min: 3, max: 5, message: "长度在3到5个字符", trigger: "change" },
+        //   { validator: validateFunc, trigger: "change" }, // 自定义校检
+        // ],
+      },
+    };
+  },
+  provide() {
+    return {
+      getForm: () => {
+        return this.form;
+      },
+      resetForm: () => {
+        this.$refs.form.resetFields();
+      },
+      validate: (cb) => {
+        this.$refs.form.validate(cb);
+      },
+    };
+  },
+  mounted() {
+    // 回显的逻辑写这里
+    // axios.get...
+    // this.form = ...
+  },
+};
+</script>
