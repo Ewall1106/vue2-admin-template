@@ -4,8 +4,8 @@
     :model="form"
     :rules="rules"
     v-bind="$attrs"
-    :label-col="{ span: labelcolspan }"
-    :wrapper-col="{ span: wrappercolspan }"
+    :label-col="{ span: labelColSpan, offset: labelColOffset }"
+    :wrapper-col="{ span: wrapperColSpan, offset: wrapperColOffset }"
   >
     <slot />
   </FormModel>
@@ -17,13 +17,21 @@ import { FormModel } from "ant-design-vue";
 export default {
   name: "AntdForm",
   props: {
-    labelcolspan: {
+    labelColSpan: {
       type: Number,
-      default: 2,
+      default: 4,
     },
-    wrappercolspan: {
+    wrapperColSpan: {
       type: Number,
-      default: 8,
+      default: 20,
+    },
+    labelColOffset: {
+      type: Number,
+      default: 0,
+    },
+    wrapperColOffset: {
+      type: Number,
+      default: 0,
     },
   },
   components: {

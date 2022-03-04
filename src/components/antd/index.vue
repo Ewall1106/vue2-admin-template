@@ -1,7 +1,18 @@
 <template>
   <div class="home">
-    <Form>
-      <FormItem v-bind="{ name: 'name', label: '名字' }">
+    <Form
+      v-bind="{
+        'label-col-span': 4,
+        'label-col-offset': 0,
+        'wrapper-col-span': 20,
+      }"
+    >
+      <FormItem
+        v-bind="{
+          name: 'name',
+          label: '名字',
+        }"
+      >
         <FormItemInput v-bind="{ name: 'name' }" />
       </FormItem>
 
