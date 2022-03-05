@@ -3,6 +3,7 @@
     <Button @click="onConfirm" type="primary">确认</Button>
     <Button @click="onReset">重置</Button>
     <Button @click="onValidate">校检</Button>
+    <Button @click="onReshow">回显</Button>
   </ButtonGroup>
 </template>
 
@@ -33,6 +34,9 @@ export default {
           "(具体校检规则请在 Form.vue 的 rules 属性中配置)"
         );
       });
+    },
+    onReshow() {
+      console.log("回显的逻辑在 Form.vue 的 mounted 钩子中实现");
     },
   },
 };
