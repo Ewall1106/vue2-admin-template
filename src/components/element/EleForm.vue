@@ -32,12 +32,15 @@ export default {
         // name: [
         //   { required: true, message: "改字段不能为空", trigger: "change" },
         //   { min: 3, max: 5, message: "长度在3到5个字符", trigger: "change" },
+        //   { validator: validateFunc, trigger: 'change' } // 自定义校检
         // ],
       },
     };
   },
   mounted() {
-    // 回显的逻辑写这里 axios.get...
+    // 回显的逻辑写这里
+    // axios.get...
+    // this.form = ...
   },
 };
 </script>

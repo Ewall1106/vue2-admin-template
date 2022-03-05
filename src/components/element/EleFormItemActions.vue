@@ -27,8 +27,11 @@ export default {
     },
     onValidate() {
       this.validate((valid) => {
-        console.log("validate:", valid);
-        console.log("校检规则请在Form.tsx的rules属性中配置");
+        console.log(
+          "validate:",
+          valid,
+          "具体校检规则请在 Form.vue 的 rules 属性中配置"
+        );
       });
     },
   },

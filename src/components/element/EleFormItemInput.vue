@@ -11,7 +11,7 @@ export default {
   components: {
     Input,
   },
-  inject: ["getForm", "resetForm"],
+  inject: ["getForm"],
   data() {
     return {
       form: this.getForm(),
