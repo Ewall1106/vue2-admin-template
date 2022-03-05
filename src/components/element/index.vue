@@ -8,6 +8,11 @@
       <FormItem v-bind="{ name: 'age', label: 'age' }">
         <FormItemInput v-bind="{ name: 'age' }" />
       </FormItem>
+
+      <FormItem v-bind="{ name: 'city', label: 'city' }">
+        <FormItemSelect v-bind="{ name: 'city' }" />
+      </FormItem>
+
       <FormItem>
         <EleFormItemActions />
       </FormItem>
@@ -19,6 +24,7 @@
 import Form from "./EleForm.vue";
 import FormItem from "./EleFormItem.vue";
 import FormItemInput from "./EleFormItemInput.vue";
+import FormItemSelect from "./EleFormItemSelect.vue";
 import EleFormItemActions from "./EleFormItemActions.vue";
 
 export default {
@@ -26,6 +32,7 @@ export default {
     Form,
     FormItem,
     FormItemInput,
+    FormItemSelect,
     EleFormItemActions,
   },
 };
