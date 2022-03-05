@@ -1,25 +1,15 @@
 <template>
   <div class="home">
-    <!-- <FormIndex /> -->
-    <!-- <ElementTestForm />
-    <hr /> -->
-    <!-- <AntdForm /> -->
-    <Test />
+    <ElementForm />
   </div>
 </template>
 
 <script>
-// import FormIndex from "@/components/element";
-// import ElementTestForm from "@/components/ElementTestForm";
-// import AntdForm from "@/components/antd/index.vue";
-import Test from "@/components/AntdFormTest";
+import ElementForm from "@/components/element";
 
 export default {
   components: {
-    // FormIndex,
-    // ElementTestForm,
-    // AntdForm,
-    Test,
+    ElementForm,
   },
 };
 </script>

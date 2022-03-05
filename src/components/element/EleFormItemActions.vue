@@ -30,7 +30,7 @@ export default {
         console.log(
           "validate:",
           valid,
-          "具体校检规则请在 Form.vue 的 rules 属性中配置"
+          "(具体校检规则请在 Form.vue 的 rules 属性中配置)"
         );
       });
     },

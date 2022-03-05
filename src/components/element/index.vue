@@ -8,7 +8,9 @@
       <FormItem v-bind="{ name: 'age', label: 'age' }">
         <FormItemInput v-bind="{ name: 'age' }" />
       </FormItem>
-      <EleFormItemActions />
+      <FormItem>
+        <EleFormItemActions />
+      </FormItem>
     </Form>
   </div>
 </template>
