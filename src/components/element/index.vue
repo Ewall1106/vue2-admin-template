@@ -13,6 +13,10 @@
         <FormItemSelect v-bind="{ name: 'city' }" />
       </FormItem>
 
+      <FormItem v-bind="{ name: 'delivery', label: '及时配送' }">
+        <FormItemSwitch v-bind="{ name: 'delivery' }" />
+      </FormItem>
+
       <FormItem>
         <EleFormItemActions />
       </FormItem>
@@ -25,6 +29,7 @@ import Form from "./EleForm.vue";
 import FormItem from "./EleFormItem.vue";
 import FormItemInput from "./EleFormItemInput.vue";
 import FormItemSelect from "./EleFormItemSelect.vue";
+import FormItemSwitch from "./EleFormItemSwitch.vue";
 import EleFormItemActions from "./EleFormItemActions.vue";
 
 export default {
@@ -33,6 +38,7 @@ export default {
     FormItem,
     FormItemInput,
     FormItemSelect,
+    FormItemSwitch,
     EleFormItemActions,
   },
 };
