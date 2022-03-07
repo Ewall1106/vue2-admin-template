@@ -38,6 +38,7 @@ export default {
         delivery: false,
         type: [],
         radio: "",
+        time: new Date(2016, 9, 10, 18, 40),
       },
       rules: {
         // name: [
