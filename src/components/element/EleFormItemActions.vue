@@ -16,7 +16,7 @@ export default {
     Button,
     ButtonGroup,
   },
-  inject: ["validate", "getForm", "resetForm"],
+  inject: ["getForm", "setForm", "resetForm", "validate"],
   methods: {
     onConfirm() {
       const form = this.getForm();
@@ -36,7 +36,11 @@ export default {
       });
     },
     onReshow() {
-      console.log("回显的逻辑在 Form.vue 的 mounted 钩子中实现");
+      console.log("1. 补全 Form.vue 中的 form 相关表单域属性");
+      console.log(
+        "2. 回显的逻辑在Form.vue的mounted钩子中实现 OR 使用this.setForm({...})方法"
+      );
+      // this.setForm({});
     },
   },
 };

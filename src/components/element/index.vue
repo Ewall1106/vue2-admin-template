@@ -17,6 +17,10 @@
         <FormItemSwitch v-bind="{ name: 'delivery' }" />
       </FormItem>
 
+      <FormItem v-bind="{ type: 'type', label: '活动性质' }">
+        <FormItemCheckboxGroup v-bind="{ name: 'type' }" />
+      </FormItem>
+
       <FormItem>
         <EleFormItemActions />
       </FormItem>
@@ -31,6 +35,7 @@ import FormItemInput from "./EleFormItemInput.vue";
 import FormItemSelect from "./EleFormItemSelect.vue";
 import FormItemSwitch from "./EleFormItemSwitch.vue";
 import EleFormItemActions from "./EleFormItemActions.vue";
+import FormItemCheckboxGroup from "./EleFormItemCheckbox.vue";
 
 export default {
   components: {
@@ -40,6 +45,7 @@ export default {
     FormItemSelect,
     FormItemSwitch,
     EleFormItemActions,
+    FormItemCheckboxGroup,
   },
 };
 </script>

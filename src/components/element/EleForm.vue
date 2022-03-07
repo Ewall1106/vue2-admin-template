@@ -17,6 +17,11 @@ export default {
       getForm: () => {
         return this.form;
       },
+      setForm: (obj) => {
+        Object.keys(obj).forEach((key) => {
+          this.form[key] = obj[key];
+        });
+      },
       resetForm: () => {
         this.$refs.form.resetFields();
       },
@@ -38,6 +43,9 @@ export default {
     };
   },
   mounted() {
+    if (!Object.keys(this.form).length) {
+      console.error("请先定义 Form.vue 中的关于 form 相关表单域属性");
+    }
     // 回显的逻辑写这里
     // axios.get...
     // this.form = ...
