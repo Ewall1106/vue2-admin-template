@@ -22,7 +22,7 @@ import { CheckboxGroup, Checkbox } from "element-ui";
 const options = ["上海", "北京", "广州", "深圳"];
 
 export default {
-  name: "FormItemCheckboxGroup",
+  name: "EleFormItemCheckbox",
   props: ["name"],
   components: {
     CheckboxGroup,
@@ -55,7 +55,8 @@ export default {
     onChange(value) {
       let checkedCount = value.length;
       this.checkAll = checkedCount === this.options.length;
-      this.isIndeterminate = checkedCount > 0 && checkedCount < this.options.length;
+      this.isIndeterminate =
+        checkedCount > 0 && checkedCount < this.options.length;
     },
   },
 };

@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <ElementForm />
-    <Test />
   </div>
 </template>
 

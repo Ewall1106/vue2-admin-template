@@ -17,8 +17,12 @@
         <FormItemSwitch v-bind="{ name: 'delivery' }" />
       </FormItem>
 
-      <FormItem v-bind="{ type: 'type', label: '活动性质' }">
+      <FormItem v-bind="{ name: 'type', label: '活动性质' }">
         <FormItemCheckboxGroup v-bind="{ name: 'type' }" />
+      </FormItem>
+
+      <FormItem v-bind="{ name: 'radio', label: '活动单选' }">
+        <EleFormItemRadio v-bind="{ name: 'radio' }" />
       </FormItem>
 
       <FormItem>
@@ -36,6 +40,7 @@ import FormItemSelect from "./EleFormItemSelect.vue";
 import FormItemSwitch from "./EleFormItemSwitch.vue";
 import EleFormItemActions from "./EleFormItemActions.vue";
 import FormItemCheckboxGroup from "./EleFormItemCheckbox.vue";
+import EleFormItemRadio from "./EleFormItemRadio.vue";
 
 export default {
   components: {
@@ -46,6 +51,7 @@ export default {
     FormItemSwitch,
     EleFormItemActions,
     FormItemCheckboxGroup,
+    EleFormItemRadio,
   },
 };
 </script>

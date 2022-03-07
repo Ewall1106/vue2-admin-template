@@ -32,7 +32,13 @@ export default {
   },
   data() {
     return {
-      form: {},
+      form: {
+        name: "",
+        age: "",
+        delivery: false,
+        type: [],
+        radio: "",
+      },
       rules: {
         // name: [
         //   { required: true, message: "改字段不能为空", trigger: "change" },
