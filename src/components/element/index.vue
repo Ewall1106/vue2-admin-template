@@ -29,6 +29,10 @@
         <EleFormItemTimePicker v-bind="{ name: 'time' }" />
       </FormItem>
 
+      <FormItem v-bind="{ name: 'date', label: '活动日期' }">
+        <EleFormItemDatePicker v-bind="{ name: 'date' }" />
+      </FormItem>
+
       <FormItem>
         <EleFormItemActions />
       </FormItem>
@@ -46,6 +50,7 @@ import EleFormItemActions from "./EleFormItemActions.vue";
 import FormItemCheckboxGroup from "./EleFormItemCheckbox.vue";
 import EleFormItemRadio from "./EleFormItemRadio.vue";
 import EleFormItemTimePicker from "./EleFormItemTimePicker";
+import EleFormItemDatePicker from "./EleFormItemDatePicker.vue";
 
 export default {
   components: {
@@ -58,6 +63,7 @@ export default {
     FormItemCheckboxGroup,
     EleFormItemRadio,
     EleFormItemTimePicker,
+    EleFormItemDatePicker,
   },
 };
 </script>
