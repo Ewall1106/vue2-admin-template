@@ -12,6 +12,7 @@
 <script>
 export default {
   name: "EleTableColumnActions",
+  inject: ["handleRefresh"],
   data() {
     return {};
   },
@@ -21,6 +22,7 @@ export default {
     },
     handleDelete(idx, row) {
       console.log(idx, row);
+      this.handleRefresh();
     },
   },
 };

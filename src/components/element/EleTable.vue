@@ -27,6 +27,7 @@ export default {
   provide() {
     return {
       tableData: this.tableData,
+      handleRefresh: this.handleRefresh,
     };
   },
   data() {
@@ -69,6 +70,9 @@ export default {
           }
         });
       });
+    },
+    handleRefresh() {
+      this.getTableData();
     },
     // pagination
     handleCurrentChange(value) {

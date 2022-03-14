@@ -63,7 +63,6 @@ import EleTable from "./EleTable.vue";
 import EleTableColumn from "./EleTableColumn.vue";
 import EleTableColumnCheckbox from "./EleTableColumnCheckbox.vue";
 import EleTableColumnActions from "./EleTableColumnActions.vue";
-import ElePagination from "./ElePagination.vue";
 
 export default {
   components: {
@@ -81,7 +80,6 @@ export default {
     EleTableColumn,
     EleTableColumnCheckbox,
     EleTableColumnActions,
-    ElePagination,
   },
 };
 </script>
