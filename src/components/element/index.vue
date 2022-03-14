@@ -1,5 +1,13 @@
 <template>
   <div class="home">
+    <EleTable>
+      <EleTableColumnCheckbox></EleTableColumnCheckbox>
+      <EleTableColumn v-bind="{ prop: 'name', label: '姓名', width: '120' }"></EleTableColumn>
+      <EleTableColumn v-bind="{ prop: 'keyId', label: 'keyId', width: '120' }"></EleTableColumn>
+      <EleTableColumn v-bind="{ prop: 'name', label: '姓名', width: '120' }"></EleTableColumn>
+      <EleTableColumnActions></EleTableColumnActions>
+    </EleTable>
+
     <Form v-bind="{ 'label-width': '100px' }">
       <FormItem v-bind="{ name: 'name', label: '名字' }">
         <FormItemInput v-bind="{ name: 'name' }" />
@@ -51,6 +59,11 @@ import FormItemCheckboxGroup from "./EleFormItemCheckbox.vue";
 import EleFormItemRadio from "./EleFormItemRadio.vue";
 import EleFormItemTimePicker from "./EleFormItemTimePicker";
 import EleFormItemDatePicker from "./EleFormItemDatePicker.vue";
+import EleTable from "./EleTable.vue";
+import EleTableColumn from "./EleTableColumn.vue";
+import EleTableColumnCheckbox from "./EleTableColumnCheckbox.vue";
+import EleTableColumnActions from "./EleTableColumnActions.vue";
+import ElePagination from "./ElePagination.vue";
 
 export default {
   components: {
@@ -64,6 +77,11 @@ export default {
     EleFormItemRadio,
     EleFormItemTimePicker,
     EleFormItemDatePicker,
+    EleTable,
+    EleTableColumn,
+    EleTableColumnCheckbox,
+    EleTableColumnActions,
+    ElePagination,
   },
 };
 </script>

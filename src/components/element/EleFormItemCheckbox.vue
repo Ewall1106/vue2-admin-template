@@ -55,8 +55,7 @@ export default {
     onChange(value) {
       let checkedCount = value.length;
       this.checkAll = checkedCount === this.options.length;
-      this.isIndeterminate =
-        checkedCount > 0 && checkedCount < this.options.length;
+      this.isIndeterminate = checkedCount > 0 && checkedCount < this.options.length;
     },
   },
 };
