@@ -2,9 +2,9 @@
   <div class="home">
     <EleTable>
       <EleTableColumnCheckbox></EleTableColumnCheckbox>
-      <EleTableColumn v-bind="{ prop: 'name', label: '姓名', width: '120' }"></EleTableColumn>
-      <EleTableColumn v-bind="{ prop: 'keyId', label: 'keyId', width: '120' }"></EleTableColumn>
-      <EleTableColumn v-bind="{ prop: 'name', label: '姓名', width: '120' }"></EleTableColumn>
+      <EleTableColumn v-bind="{ prop: 'name', label: '姓名' }"></EleTableColumn>
+      <EleTableColumn v-bind="{ prop: 'keyId', label: 'keyId' }"></EleTableColumn>
+      <EleTableColumn v-bind="{ prop: 'name', label: '姓名' }"></EleTableColumn>
       <EleTableColumnActions></EleTableColumnActions>
     </EleTable>
 
@@ -61,7 +61,7 @@ import EleFormItemTimePicker from "./EleFormItemTimePicker";
 import EleFormItemDatePicker from "./EleFormItemDatePicker.vue";
 import EleTable from "./EleTable.vue";
 import EleTableColumn from "./EleTableColumn.vue";
-import EleTableColumnCheckbox from "./EleTableColumnCheckbox.vue";
+import EleTableColumnCheckbox from "./EleTableColumnSelection.vue";
 import EleTableColumnActions from "./EleTableColumnActions.vue";
 
 export default {

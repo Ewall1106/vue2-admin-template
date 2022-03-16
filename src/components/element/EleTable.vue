@@ -97,6 +97,7 @@ export default {
       this.checkedListMap.set(this.currentSize, currentSizeCheckList);
     },
     handleSelectAll(selection) {
+      console.log("select-all", selection);
       this.checkedListMap.set(this.currentSize, selection);
     },
   },

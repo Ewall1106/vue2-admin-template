@@ -5,9 +5,5 @@
 <script>
 export default {
   name: "EleTableColumn",
-  props: ["name"],
-  data() {
-    return {};
-  },
 };
 </script>
